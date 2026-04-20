@@ -484,6 +484,12 @@
   }
   .hero-line {
     display: block; overflow: hidden;
+    padding-bottom: 0.06em;
+  }
+  /* Last line has descenders (g in ignore) — needs more room */
+  .hero-line:last-child {
+    padding-bottom: 0.18em;
+    overflow: visible;
   }
   .hero-line-inner {
     display: block;
@@ -971,27 +977,27 @@
   <p class="section-label reveal">Our Offers</p>
   <div style="display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
     <h2 class="section-headline reveal">Built for<br>serious growth.</h2>
-    <p class="reveal" style="font-size: 0.95rem; font-weight: 300; color: #777; max-width: 320px; line-height: 1.7;">Structured to fit your business, with measurable impact from day one.</p>
+    <p class="reveal" style="font-size: 0.95rem; font-weight: 300; color: #777; max-width: 320px; line-height: 1.7;">Three ways to work with us — each built around where your business is right now.</p>
   </div>
   <div class="offers-grid">
     <div class="offer-card reveal">
       <span class="offer-badge">Foundation</span>
       <h3 class="offer-title">Positioning Sprint</h3>
-      <p class="offer-desc">A focused audit and strategy session. We diagnose exactly where your presence is falling short and define what needs to change — before building anything.</p>
-      <a href="#cta" class="offer-cta" style="margin-top: auto;">Get Started</a>
+      <p class="offer-desc">You know something's off — clients aren't finding you, or when they do, they're not converting. This is where we start. A focused audit that surfaces exactly what's working against you and defines the position that will work for you.</p>
     </div>
     <div class="offer-card featured reveal">
       <span class="offer-badge">Most Popular</span>
       <h3 class="offer-title">Digital Conversion Engine</h3>
-      <p class="offer-desc">Our flagship 120-day programme. Content, creative, strategy, and systems — all built to turn your online presence into a structured client acquisition engine.</p>
-      <a href="#cta" class="offer-cta" style="margin-top: auto;">Book a Call</a>
+      <p class="offer-desc">Our flagship 120-day engagement. We build the full system — positioning, content direction, creative production, and the online infrastructure to turn your presence into a consistent source of qualified clients.</p>
     </div>
     <div class="offer-card reveal">
       <span class="offer-badge">Ongoing</span>
       <h3 class="offer-title">Monthly Partnership</h3>
-      <p class="offer-desc">We don't do one-off projects and disappear. An ongoing engagement where we manage direction, content, and creative — continuously growing your presence.</p>
-      <a href="#cta" class="offer-cta" style="margin-top: auto;">Get Started</a>
+      <p class="offer-desc">For businesses that want a long-term partner, not a one-off project. We stay in the work with you — managing direction, producing content, and continuously refining your presence as your business grows.</p>
     </div>
+  </div>
+  <div class="reveal" style="text-align: center; margin-top: 2.5rem;">
+    <a href="#cta" class="btn-primary" style="background: var(--black); color: var(--white); display: inline-block;">Get Started</a>
   </div>
 </section>
 
