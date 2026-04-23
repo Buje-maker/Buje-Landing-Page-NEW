@@ -3,7 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thank You — Buje</title>
+<title>Thank You | Buje</title>
+<meta name="description" content="Thank you for contacting Buje. Your message has been received and we will be in touch shortly about your digital presence, positioning, or growth inquiry.">
+<link rel="canonical" href="https://www.bebuje.com/thank-you.html">
+<meta property="og:title" content="Thank You | Buje">
+<meta property="og:description" content="Thank you for contacting Buje. Your message has been received and we will be in touch shortly.">
+<meta property="og:image" content="https://www.bebuje.com/assets/og-image.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.bebuje.com/thank-you.html">
+<meta property="og:site_name" content="Buje">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Thank You | Buje">
+<meta name="twitter:description" content="Thank you for contacting Buje. Your message has been received and we will be in touch shortly.">
+<meta name="twitter:image" content="https://www.bebuje.com/assets/og-image.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYTNYM9T00"></script>
@@ -13,6 +25,17 @@
   gtag('js', new Date());
 
   gtag('config', 'G-FYTNYM9T00');
+
+  function trackEvent(eventName, eventCategory, eventLabel, extra = {}) {
+    if (typeof gtag !== 'function') return;
+    const payload = {
+      event_category: eventCategory,
+      page_location: window.location.pathname,
+      ...extra
+    };
+    if (eventLabel) payload.event_label = eventLabel;
+    gtag('event', eventName, payload);
+  }
 </script>
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
@@ -22,11 +45,15 @@
     y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
   })(window, document, "clarity", "script", "wfc90t9ck2");
 </script>
-<script>
-  gtag('event', 'form_submit', {
-    event_category: 'Lead',
-    event_label: 'Formspree Submission Confirmed'
-  });
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.bebuje.com/thank-you.html#webpage",
+  "url": "https://www.bebuje.com/thank-you.html",
+  "name": "Thank You | Buje",
+  "description": "Confirmation page for contact submissions sent to Buje."
+}
 </script>
 <style>
   :root {
@@ -82,48 +109,99 @@
     border-bottom: 1px solid transparent;
   }
   .nav-logo {
-    font-weight: 900; font-size: 1.5rem; letter-spacing: -0.03em;
+    font-weight: 700; font-size: 1.5rem; letter-spacing: -0.03em;
     color: var(--white); text-decoration: none;
   }
   .nav-logo span { color: var(--green); }
   .nav-cta {
-    font-size: 0.75rem; font-weight: 700; padding: 0.6rem 1.5rem;
+    font-size: 0.95rem; font-weight: 600; padding: 0;
     background: transparent; color: var(--white);
-    border: 1.5px solid rgba(255,255,255,0.5); cursor: pointer; border-radius: 100px;
-    text-decoration: none; letter-spacing: 0.12em;
-    transition: background 0.4s, color 0.4s, border-color 0.4s;
+    border: none; cursor: pointer; border-radius: 0;
+    text-decoration: none; letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 0.4s;
   }
   .nav-cta:hover {
-    background: var(--green); color: var(--white);
-    border-color: var(--green);
+    color: var(--green);
   }
   .content { position: relative; z-index: 1; }
+  .support-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+  }
+  .support-links a {
+    color: rgba(255,255,255,0.72);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.25s ease, border-color 0.25s ease;
+  }
+  .support-links a:hover {
+    color: var(--white);
+    border-color: rgba(255,255,255,0.55);
+  }
   .label {
-    font-size: 0.75rem; font-weight: 700;
+    font-size: 0.95rem; font-weight: 600;
     letter-spacing: 0.15em; text-transform: uppercase;
     color: var(--green); margin-bottom: 1.5rem;
   }
   h1 {
-    font-size: clamp(2.2rem, 5vw, 4rem);
-    font-weight: 900; line-height: 1.08;
-    letter-spacing: -0.02em; margin-bottom: 1.25rem;
+    font-size: clamp(1.75rem, 5vw, 2.75rem);
+    font-weight: 700; line-height: 1.14;
+    letter-spacing: -0.005em; margin-bottom: 1.25rem;
   }
   h1 span { color: var(--rose); }
   p {
-    font-size: 1rem; font-weight: 300;
+    font-size: clamp(0.96rem, 1.3vw, 1.06rem); font-weight: 400;
     color: rgba(255,255,255,0.5);
-    line-height: 1.7; max-width: 420px;
+    line-height: 1.62; max-width: 440px;
     margin: 0 auto 2.5rem;
   }
   .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
     font-family: 'Outfit', sans-serif;
-    font-size: 0.9rem; font-weight: 700;
-    padding: 0.85rem 2rem; border-radius: 100px;
-    background: var(--white); color: var(--black);
-    text-decoration: none; transition: background 0.2s, color 0.2s;
+    font-size: 0.95rem; font-weight: 600;
+    padding: 0.9rem 1.5rem 0.9rem 1.25rem; border-radius: 999px;
+    min-height: 3.15rem;
+    background:
+      radial-gradient(circle at 12% 50%, rgba(106,191,75,0.24), transparent 22%),
+      linear-gradient(135deg, #151c12 0%, #243119 100%);
+    color: var(--white);
+    border: 1px solid rgba(123, 186, 95, 0.34);
+    box-shadow:
+      0 14px 32px rgba(13,13,13,0.18),
+      inset 0 1px 0 rgba(255,255,255,0.08);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.22s ease, color 0.22s ease, border-color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
   }
-  .btn:hover { background: var(--green); color: var(--white); }
+  .btn::before {
+    content: '';
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 0 0.3rem rgba(106,191,75,0.14);
+    flex-shrink: 0;
+  }
+  .btn:hover {
+    background:
+      radial-gradient(circle at 12% 50%, rgba(106,191,75,0.3), transparent 24%),
+      linear-gradient(135deg, #1c2a13 0%, #30401f 100%);
+    color: var(--white);
+    border-color: rgba(139, 208, 104, 0.46);
+    box-shadow:
+      0 18px 36px rgba(13,13,13,0.22),
+      0 0 0 1px rgba(106,191,75,0.08);
+    transform: translateY(-1px);
+  }
   @media (max-width: 900px) {
     nav { padding: 1rem 1.5rem; }
   }
@@ -132,18 +210,64 @@
 <body>
   <nav id="main-nav">
     <a class="nav-logo" href="index.html">Buje<span>.</span></a>
-    <a class="nav-cta" href="https://calendar.app.google/nASebpsy7ougWdi37" target="_blank" rel="noopener noreferrer" onclick="gtag('event','calendar_click',{event_category:'Lead',event_label:'Book Call'});">BOOK</a>
+    <a class="nav-cta" href="https://calendar.app.google/nASebpsy7ougWdi37" target="_blank" rel="noopener noreferrer" onclick="trackEvent('calendar_click','Lead','Thank You - Nav Book');">BOOK CALL</a>
   </nav>
   <div class="content">
     <p class="label">Message Received</p>
     <h1>We<span>'</span>ll be in touch.</h1>
     <p>Your message has been received. We review every submission personally and will get back to you shortly.</p>
-    <a href="index.html" class="btn" onclick="gtag('event','cta_click',{event_category:'Navigation',event_label:'Back to Home'});">Back to Home</a>
+    <a href="index.html" class="btn" onclick="trackEvent('cta_click','CTA','Thank You - Back to Home');">Back to Home</a>
+    <div class="support-links" aria-label="More pages">
+      <a href="about.html" onclick="trackEvent('cta_click','CTA','Thank You - About');">About</a>
+      <a href="case-study.html" onclick="trackEvent('cta_click','CTA','Thank You - Case Study');">Case Study</a>
+    </div>
   </div>
   <div id="cursor-dot"></div>
   <div id="cursor-ring"></div>
 
   <script>
+    (function initAnalyticsTracking() {
+      if (window.__bujeAnalyticsInitialized) return;
+      window.__bujeAnalyticsInitialized = true;
+
+      let scroll50Tracked = false;
+      let scroll90Tracked = false;
+      let formStarted = false;
+      const seenSections = new Set();
+
+      window.addEventListener('scroll', () => {
+        const scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight;
+
+        if (!scroll50Tracked && scrollPercent > 0.5) {
+          scroll50Tracked = true;
+          trackEvent('scroll_50', 'Engagement', 'Scroll 50%');
+        }
+
+        if (!scroll90Tracked && scrollPercent > 0.9) {
+          scroll90Tracked = true;
+          trackEvent('scroll_90', 'Engagement', 'Scroll 90%');
+        }
+      }, { passive: true });
+
+      const trackableSections = document.querySelectorAll('section[id]');
+      const sectionViewObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting || seenSections.has(entry.target.id)) return;
+          seenSections.add(entry.target.id);
+          trackEvent('section_view', 'Engagement', entry.target.id, { section_id: entry.target.id });
+        });
+      }, { threshold: 0.5 });
+      trackableSections.forEach((section) => sectionViewObserver.observe(section));
+
+      document.querySelectorAll('input, textarea').forEach((field) => {
+        field.addEventListener('focus', () => {
+          if (formStarted) return;
+          formStarted = true;
+          trackEvent('form_start', 'Lead', 'Form Start');
+        }, { once: true });
+      });
+    })();
+
     const enableCursor = window.matchMedia('(min-width: 960px) and (pointer: fine)');
     const dot = document.getElementById('cursor-dot');
     const ring = document.getElementById('cursor-ring');

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BUJE Blog | Digital Marketing, Lead Generation, and Brand Insights</title>
+<meta name="description" content="Insights from BUJE on digital marketing, lead generation, conversion, and digital presence for growing businesses.">
+<meta property="og:title" content="BUJE Blog | Digital Marketing, Lead Generation, and Brand Insights">
+<meta property="og:description" content="Insights from BUJE on digital marketing, lead generation, conversion, and digital presence for growing businesses.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Buje">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://bebuje.com/blog.html">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FYTNYM9T00"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FYTNYM9T00');
+  function trackEvent(eventName, eventCategory, eventLabel, extra = {}) {
+    if (typeof gtag !== 'function') return;
+    const payload = { event_category: eventCategory, page_location: window.location.pathname, ...extra };
+    if (eventLabel) payload.event_label = eventLabel;
+    gtag('event', eventName, payload);
+  }
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "wfc90t9ck2");
+</script>
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "BUJE Insights",
+  "description": "Insights on digital marketing, lead generation, brand positioning, and digital presence for growing businesses.",
+  "url": "https://bebuje.com/blog.html",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Buje",
+    "url": "https://bebuje.com",
+    "founder": {
+      "@type": "Person",
+      "name": "Nicolás Buján"
+    }
+  },
+  "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "How Businesses Generate Leads Online",
+      "description": "A clear look at how businesses actually generate leads through positioning, digital presence, conversion systems, and strategic content.",
+      "url": "https://bebuje.com/blog/how-businesses-generate-leads.html",
+      "author": { "@type": "Person", "name": "Nicolás Buján" }
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Why Most Digital Marketing Fails",
+      "description": "Most businesses do not have a traffic problem. They have a clarity, trust, and conversion problem.",
+      "url": "https://bebuje.com/blog/why-most-digital-marketing-fails.html",
+      "author": { "@type": "Person", "name": "Nicolás Buján" }
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "What Actually Converts Online",
+      "description": "A breakdown of what makes websites, content, and digital presence turn attention into action.",
+      "url": "https://bebuje.com/blog/what-actually-converts-online.html",
+      "author": { "@type": "Person", "name": "Nicolás Buján" }
+    }
+  ]
+}
+</script>
+
+<style>
+  @font-face {
+    font-family: 'MD Lump';
+    src: url('../Fonts/Md Lump.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  :root {
+    --green: #6abf4b;
+    --rose: #D4537E;
+    --black: #0d0d0d;
+    --white: #ffffff;
+    --gray-light: #f5f5f3;
+    --gray-mid: #e8e8e4;
+    --gray-text: #888;
+    --font: 'Outfit', sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: auto; }
+  body { font-family: var(--font); background: var(--white); color: var(--black); -webkit-font-smoothing: antialiased; }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.4rem 2.5rem;
+  }
+  .nav-logo {
+    font-size: 1.5rem; font-weight: 700; letter-spacing: -0.03em;
+    color: var(--white); text-decoration: none;
+  }
+  .nav-logo span { color: var(--green); }
+  nav.nav-light .nav-logo { color: var(--black); }
+  nav.nav-light .nav-logo span { color: var(--rose); }
+  .nav-cta {
+    font-size: 0.95rem; font-weight: 600; letter-spacing: 0.08em;
+    text-transform: uppercase; text-decoration: none;
+    background: transparent; color: var(--white); border: none; cursor: pointer;
+  }
+  nav.nav-light .nav-cta { color: var(--black); }
+  .nav-cta:hover { color: var(--green); }
+  nav.nav-light .nav-cta:hover { color: var(--rose); }
+
+  /* SECTION LABEL PILL */
+  .section-label {
+    display: inline-flex; align-items: center; gap: 0.7rem;
+    padding: 0.7rem 1.1rem 0.7rem 0.95rem; border-radius: 999px;
+    border: 1px solid rgba(13,13,13,0.08);
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 14px 34px rgba(0,0,0,0.06);
+    backdrop-filter: blur(14px);
+    font-size: 0.9rem; font-weight: 700; color: #6d6d67;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    margin-bottom: 1.25rem;
+  }
+  .section-label::before { content: none; }
+  #hero .section-label::before { content: ''; display: inline-block; width: 0.58rem; height: 0.58rem; border-radius: 50%; background: linear-gradient(135deg, var(--green), #8cd26c); box-shadow: 0 0 0 0.35rem rgba(106,191,75,0.12); flex-shrink: 0; }
+  [data-nav-theme="dark"] .section-label {
+    background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.78); box-shadow: 0 14px 34px rgba(0,0,0,0.25);
+  }
+
+  /* HEADLINES */
+  .section-headline {
+    font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 900;
+    line-height: 1.08; letter-spacing: -0.02em;
+  }
+
+  /* BUTTONS */
+  .btn-primary {
+    font-family: var(--font); font-size: 0.95rem; font-weight: 600;
+    padding: 0.9rem 1.5rem 0.9rem 1.25rem; border-radius: 999px; min-height: 3.15rem;
+    background: radial-gradient(circle at 12% 50%, rgba(106,191,75,0.24), transparent 22%), linear-gradient(135deg, #151c12 0%, #243119 100%);
+    color: var(--white); border: 1px solid rgba(123,186,95,0.34);
+    box-shadow: 0 14px 32px rgba(13,13,13,0.18), inset 0 1px 0 rgba(255,255,255,0.08);
+    cursor: pointer; text-decoration: none; letter-spacing: 0.08em;
+    transition: background 0.22s ease, color 0.22s ease, border-color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.7rem;
+    text-transform: uppercase;
+  }
+  .btn-primary::before {
+    content: ''; width: 0.6rem; height: 0.6rem; border-radius: 50%;
+    background: var(--green); box-shadow: 0 0 0 0.3rem rgba(106,191,75,0.14); flex-shrink: 0;
+  }
+  .btn-primary:hover {
+    background: radial-gradient(circle at 12% 50%, rgba(106,191,75,0.3), transparent 24%), linear-gradient(135deg, #1c2a13 0%, #30401f 100%);
+    color: var(--white); border-color: rgba(139,208,104,0.46);
+    box-shadow: 0 18px 36px rgba(13,13,13,0.22), 0 0 0 1px rgba(106,191,75,0.08);
+    transform: translateY(-1px);
+  }
+  .btn-secondary {
+    font-family: var(--font); font-size: 0.95rem; font-weight: 500;
+    padding: 0.9rem 1.5rem 0.9rem 1.25rem; border-radius: 999px; min-height: 3.15rem;
+    background: radial-gradient(circle at 12% 50%, rgba(212,83,126,0.18), transparent 24%), linear-gradient(135deg, rgba(24,22,24,0.96) 0%, rgba(34,31,35,0.96) 100%);
+    color: var(--white); border: 1px solid rgba(212,83,126,0.28);
+    box-shadow: 0 14px 32px rgba(13,13,13,0.16), inset 0 1px 0 rgba(255,255,255,0.06);
+    cursor: pointer; text-decoration: none; letter-spacing: 0.08em;
+    transition: border-color 0.22s ease, background 0.22s ease, color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.7rem;
+    text-transform: uppercase;
+  }
+  .btn-secondary::before {
+    content: ''; width: 0.6rem; height: 0.6rem; border-radius: 50%;
+    background: var(--rose); box-shadow: 0 0 0 0.3rem rgba(212,83,126,0.14); flex-shrink: 0;
+  }
+  .btn-secondary:hover {
+    border-color: rgba(232,118,159,0.46);
+    background: radial-gradient(circle at 12% 50%, rgba(212,83,126,0.26), transparent 26%), linear-gradient(135deg, rgba(48,24,33,0.98) 0%, rgba(61,28,40,0.98) 100%);
+    color: var(--white);
+    box-shadow: 0 18px 36px rgba(13,13,13,0.2), 0 0 0 1px rgba(212,83,126,0.08);
+    transform: translateY(-1px);
+  }
+
+  /* REVEAL */
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s cubic-bezier(.22,1,.36,1), transform 0.6s cubic-bezier(.22,1,.36,1); }
+  .reveal.visible { opacity: 1; transform: none; }
+
+  /* HERO */
+  #hero {
+    background:
+      radial-gradient(circle at top left, rgba(106,191,75,0.14), transparent 38%),
+      radial-gradient(circle at 90% 20%, rgba(212,83,126,0.1), transparent 32%),
+      var(--black);
+    padding: 10rem 4rem 7rem;
+    min-height: 60vh;
+    display: flex; align-items: flex-end;
+  }
+  .hero-content { max-width: 680px; }
+  .hero-headline {
+    font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 900;
+    line-height: 1.06; letter-spacing: -0.025em; color: var(--white);
+    margin-bottom: 1.5rem;
+  }
+  .hero-sub {
+    font-size: 1.05rem; font-weight: 300; line-height: 1.8;
+    color: rgba(255,255,255,0.65); max-width: 520px; margin-bottom: 2.25rem;
+  }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+  #hero .btn-primary { background: var(--white); color: var(--black); }
+  #hero .btn-primary:hover { background: var(--green); color: var(--white); }
+
+  /* FEATURED ARTICLE */
+  #featured { padding: 5rem 4rem; background: var(--gray-light); }
+  .featured-card {
+    background:
+      radial-gradient(circle at top left, rgba(106,191,75,0.1), transparent 44%),
+      radial-gradient(circle at 85% 15%, rgba(212,83,126,0.06), transparent 36%),
+      var(--black);
+    border-radius: 28px; padding: 3rem;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+  .featured-tag {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--green); margin-bottom: 1.25rem;
+  }
+  .featured-tag::before {
+    content: ''; width: 0.5rem; height: 0.5rem; border-radius: 50%;
+    background: var(--green); flex-shrink: 0;
+  }
+  .featured-title {
+    font-size: clamp(1.6rem, 3vw, 2.6rem); font-weight: 900;
+    line-height: 1.1; letter-spacing: -0.02em; color: var(--white);
+    margin-bottom: 1.25rem;
+  }
+  .featured-desc {
+    font-size: 1rem; line-height: 1.75; color: rgba(255,255,255,0.62);
+    margin-bottom: 2rem; max-width: 38rem;
+  }
+  .featured-meta {
+    font-size: 0.8rem; color: rgba(255,255,255,0.35); font-weight: 500;
+  }
+  .featured-card .btn-primary {
+    background: var(--white); color: var(--black); width: fit-content;
+  }
+  .featured-card .btn-primary:hover { background: var(--green); color: var(--white); }
+
+  /* ARTICLE GRID */
+  #articles { padding: 5rem 4rem; }
+  .articles-header { margin-bottom: 3rem; }
+  .articles-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+  }
+  .article-card {
+    background: var(--white); border: 1px solid rgba(13,13,13,0.07);
+    border-radius: 22px; padding: 2rem;
+    display: flex; flex-direction: column; gap: 1rem;
+    text-decoration: none; color: inherit;
+    transition: border-color 0.25s ease, transform 0.25s cubic-bezier(.22,1,.36,1), box-shadow 0.25s ease;
+  }
+  .article-card:hover {
+    border-color: rgba(13,13,13,0.18);
+    transform: translateY(-4px);
+    box-shadow: 0 18px 42px rgba(0,0,0,0.08);
+  }
+  .article-tag {
+    display: inline-flex; align-items: center; gap: 0.45rem;
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--green);
+  }
+  .article-tag::before {
+    content: ''; width: 0.45rem; height: 0.45rem; border-radius: 50%;
+    background: var(--green); flex-shrink: 0;
+  }
+  .article-title {
+    font-size: 1.2rem; font-weight: 800; line-height: 1.25;
+    letter-spacing: -0.01em; color: var(--black);
+  }
+  .article-desc {
+    font-size: 0.92rem; line-height: 1.7; color: #555;
+    flex: 1;
+  }
+  .article-cta {
+    font-size: 0.82rem; font-weight: 700; color: var(--black);
+    letter-spacing: 0.04em; display: flex; align-items: center; gap: 0.4rem;
+    margin-top: auto;
+  }
+  .article-cta::after { content: '→'; }
+  .article-card:hover .article-cta { color: var(--green); }
+
+  /* CTA SECTION */
+  #cta-blog {
+    background: var(--black); padding: 7rem 4rem;
+    text-align: center;
+  }
+  #cta-blog .section-label { margin: 0 auto 2rem; }
+  .cta-headline {
+    font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 900;
+    line-height: 1.1; letter-spacing: -0.02em; color: var(--white);
+    max-width: 580px; margin: 0 auto 1.25rem;
+  }
+  .cta-sub {
+    font-size: 1rem; line-height: 1.75; color: rgba(255,255,255,0.58);
+    max-width: 460px; margin: 0 auto 2.5rem;
+  }
+  .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  #cta-blog .btn-secondary { color: rgba(255,255,255,0.7); border-color: rgba(255,255,255,0.18); }
+  #cta-blog .btn-secondary:hover { color: var(--white); border-color: rgba(255,255,255,0.5); }
+
+  /* FOOTER */
+  footer {
+    background: var(--black); border-top: 1px solid rgba(255,255,255,0.06);
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 2rem 4rem; color: rgba(255,255,255,0.45); font-size: 0.8rem;
+  }
+  .footer-logo { font-size: 1.25rem; font-weight: 900; letter-spacing: -0.03em; color: var(--white); }
+  .footer-logo span { color: var(--green); }
+
+  /* RESPONSIVE */
+  @media (max-width: 960px) {
+    #hero { padding: 8rem 2rem 5rem; }
+    #featured { padding: 4rem 1.5rem; }
+    .featured-card { grid-template-columns: 1fr; gap: 2rem; padding: 2rem; }
+    #articles { padding: 4rem 1.5rem; }
+    .articles-grid { grid-template-columns: 1fr; gap: 1rem; }
+    #cta-blog { padding: 5rem 1.5rem; }
+    footer { flex-direction: column; gap: 0.75rem; padding: 2rem 1.5rem; text-align: center; }
+    nav { padding: 1.2rem 1.5rem; }
+  }
+  @media (min-width: 600px) and (max-width: 959px) {
+    .articles-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+<nav id="main-nav">
+  <a class="nav-logo" href="index.html">Buje<span>.</span></a>
+  <a class="nav-cta" href="about.html" onclick="trackEvent('cta_click','Navigation','Blog Nav - About');">ABOUT</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero" data-nav-theme="dark">
+  <div class="hero-content">
+    <p class="section-label reveal">Insights</p>
+    <h1 class="hero-headline reveal">Insights on Growth,<br>Positioning, and<br>Digital Presence.</h1>
+    <p class="hero-sub reveal">A collection of thinking around digital marketing, lead generation, brand positioning, and what actually helps businesses grow.</p>
+    <div class="hero-actions reveal">
+      <a href="#articles" class="btn-primary" onclick="trackEvent('cta_click','Blog','Hero - View Articles');">View Articles</a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED ARTICLE -->
+<section id="featured" data-nav-theme="light">
+  <p class="section-label reveal">Featured</p>
+  <div class="featured-card reveal">
+    <div>
+      <p class="featured-tag">Lead Generation</p>
+      <h2 class="featured-title">How Businesses<br>Generate Leads Online</h2>
+      <p class="featured-desc">A clear look at how businesses actually generate leads through positioning, digital presence, conversion systems, and strategic content. Not theory — what works in practice.</p>
+      <p class="featured-meta">By Nicolás Buján · Buje</p>
+    </div>
+    <div>
+      <a href="blog/how-businesses-generate-leads.html" class="btn-primary" onclick="trackEvent('article_click','Blog','Featured - Lead Generation');">Read Article</a>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLE GRID -->
+<section id="articles" data-nav-theme="light">
+  <div class="articles-header">
+    <p class="section-label reveal">All Articles</p>
+  </div>
+  <div class="articles-grid">
+    <a class="article-card reveal" href="blog/how-businesses-generate-leads.html" onclick="trackEvent('article_click','Blog','Grid - Lead Generation');">
+      <p class="article-tag">Lead Generation</p>
+      <h3 class="article-title">How Businesses Generate Leads Online</h3>
+      <p class="article-desc">A clear look at how businesses actually generate leads through positioning, digital presence, conversion systems, and strategic content.</p>
+      <span class="article-cta">Read Article</span>
+    </a>
+    <a class="article-card reveal" href="blog/why-most-digital-marketing-fails.html" onclick="trackEvent('article_click','Blog','Grid - Digital Marketing');">
+      <p class="article-tag">Digital Marketing</p>
+      <h3 class="article-title">Why Most Digital Marketing Fails</h3>
+      <p class="article-desc">Most businesses do not have a traffic problem. They have a clarity, trust, and conversion problem.</p>
+      <span class="article-cta">Read Article</span>
+    </a>
+    <a class="article-card reveal" href="blog/what-actually-converts-online.html" onclick="trackEvent('article_click','Blog','Grid - Conversion');">
+      <p class="article-tag">Conversion</p>
+      <h3 class="article-title">What Actually Converts Online</h3>
+      <p class="article-desc">A breakdown of what makes websites, content, and digital presence turn attention into action.</p>
+      <span class="article-cta">Read Article</span>
+    </a>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta-blog" data-nav-theme="dark">
+  <p class="section-label reveal">Work With Buje</p>
+  <h2 class="cta-headline reveal">Build a digital presence people remember.</h2>
+  <p class="cta-sub reveal">If your business is ready for stronger positioning, clearer communication, and better lead flow, let's build it properly.</p>
+  <div class="cta-actions reveal">
+    <a href="https://calendar.app.google/nASebpsy7ougWdi37" target="_blank" rel="noopener noreferrer" class="btn-primary" onclick="trackEvent('calendar_click','Lead','Blog CTA - Book Call');">Book a Call</a>
+    <a href="case-study.html" class="btn-secondary" onclick="trackEvent('cta_click','CTA','Blog CTA - Case Study');">View Case Study</a>
+  </div>
+</section>
+
+<footer data-nav-theme="dark">
+  <div class="footer-logo">Buje<span>.</span></div>
+  <div>© 2026 Buje Entertainment LLC. All rights reserved.</div>
+</footer>
+
+<div id="cursor-dot"></div>
+
+<script>
+  /* NAV THEME */
+  const nav = document.getElementById('main-nav');
+  function syncNavTheme() {
+    const themedEl = document.elementsFromPoint(window.innerWidth / 2, nav.offsetHeight + 12)
+      .map(el => el.closest('[data-nav-theme]')).find(Boolean);
+    nav.classList.toggle('nav-light', !!themedEl && themedEl.dataset.navTheme === 'light');
+  }
+  window.addEventListener('scroll', syncNavTheme, { passive: true });
+  window.addEventListener('resize', syncNavTheme);
+  syncNavTheme();
+
+  /* REVEAL */
+  const reveals = document.querySelectorAll('.reveal');
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 70);
+        revealObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => revealObs.observe(el));
+
+  /* CURSOR DOT */
+  const dot = document.getElementById('cursor-dot');
+  const enableCursor = window.matchMedia('(hover: hover) and (pointer: fine)');
+  if (enableCursor.matches) {
+    document.body.classList.add('cursor-enabled');
+    document.addEventListener('mousemove', e => {
+      dot.style.left = e.clientX + 'px'; dot.style.top = e.clientY + 'px';
+    });
+    document.querySelectorAll('a, button, .article-card').forEach(el => {
+      el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+      el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+    });
+  }
+</script>
+</body>
+</html>
